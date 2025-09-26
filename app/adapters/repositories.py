@@ -19,6 +19,6 @@ class MemoryRepository(ABC):
         pass
 
     @abstractmethod
-    def get_cosine_sim(self, memory: Memory) -> List[Memory]:
-        """Retrieve a cosine similarity by a vector data."""
+    def get_account_from_person(self, person_id: str) -> List[Account]:
+        """Get all accounts from a person."""
         pass
